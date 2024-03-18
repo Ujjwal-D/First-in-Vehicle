@@ -1,42 +1,659 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CAR-TINT</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <div class="logo">
-            <h1 class="horizon">First In <span class="tint">Tinting Vehicles</span></h1>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta
+      name="keywords"
+      content="FirstInTinting, FirstInVehicle, car tinting service, vehicle tinting, window tinting, automotive tinting, professional car tinting, quality tint service, tinting experts, vehicle care, car protection, tinting solutions, auto window tinting, professional vehicle tinting, high-quality tint materials, advanced tinting technology, UV protection, glare reduction, privacy tinting, custom tint shades, automotive aesthetics, tinting specialists, car care services, durable window films, energy-efficient tinting, automotive customization, tinting consultation, local tinting service, tinting maintenance, best car tinting in town"
+    />
+    <meta name="author" content="firstinvehicles" />
+    <meta name="robots" content="index,follow" />
+    <meta name="revisit-after" content="1 days" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Language" content="en-us" />
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="First in Tinting" />
+    <meta property="og:description" content="   We are First In Vehicles, a family-owned and operated business that
+    has been providing professional car tinting services in Queensland
+    since 2005. With over 18 years of experience, we bring
+    a wealth of knowledge and expertise to every vehicle we service. Our
+    passion for cars and dedication to quality workmanship drive us to
+    use only the best materials and equipment, ensuring that your car
+    windows are tinted to perfection." />
+
+    <meta property="og:image" content="http://" />
+    <meta property="og:url" content="https://www.firstintinting.com.au" />
+18 years of experience
+    <title>First In Tinting</title>
+    <!-- Libraries -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Dosis:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Bruno+Ace&family=Alfa+Slab+One&family=Fira+Sans&family=Racing+Sans+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/site/style/style.css" />
+  </head>
+  <body>
+
+    <header class="header">
+      <!-- Preloader -->
+      <div id="preloader">
+        <div class="loader"></div>
+      </div>
+      <!-- /Preloader -->
+      <div class="top-navbar">
+        <div class="contact-info">
+          <span><i class="fa fa-phone"></i>+61 488 900 468</span>
+          <span>/</span>
+          <span
+            ><i class="fa fa-map-marker-alt"></i
+            ><a href="https://maps.app.goo.gl/Zred25UgV65HSBbE7" target="_blank"
+              >124-126 Gladstone Rd, Allenstown, QLD 4700</a
+            >
+          </span>
         </div>
-        <nav class="nav-items">
-            <ul class="nav-links">
-                <li><a href="#home" class="active">HOME</a></li>
-                <li><a href="#services">SERVICES</a></li>
-                <li><a href="#gallery">GALLERY</a></li>
-                <li><a href="#about">ABOUT US</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-            </ul>
-            <div class="hamburger-menu">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-        </nav>
+      </div>
+      <a href="/index.html"
+        ><img src="/img/logo.svg" alt="logo" loading="lazy"
+      /></a>
+      <div class="menu-btn"></div>
+      <div class="navigation">
+        <div class="navigation-items">
+          <a href="/index.html">Home</a>
+          <a href="/site/html/services.html">Services</a>
+          <a href="/site/html/gallery.html">Gallery</a>
+          <a href="/site/html/pricing.html">Pricing</a>
+          <a href="/index.html#about">About Us</a>
+          <a href="/site/html/contact.html">Contact Us</a>
+        </div>
+      </div>
     </header>
-    <div class="main-section">
-        <h2>Tinting redefined: drive better</h2>
-        <button id="bookNow">BOOK NOW</button>
+
+    <!-- The Form Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="header-section">
+          <h2 class="title">Book an<span> Appointment</span></h2>
+        </div>
+        <form id="main_contact_form" class="modal-form" method="post">
+          <div class="modal-input-group">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="modal-input-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <div class="modal-input-group">
+            <label for="phone">Phone</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Enter your phone"
+              required
+            />
+          </div>
+          <div class="modal-input-group">
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date" required />
+          </div>
+          <div class="modal-input-group">
+            <label for="time">Time</label>
+            <input type="time" id="time" name="time" required />
+          </div>
+          <div class="modal-input-group">
+            <label for="service">Service</label>
+            <select id="services" name="service" required>
+              <option value="">Select a service</option>
+              <option value="One Window Ceramic Film">
+                One Window Ceramic Film
+              </option>
+              <option value="Rear Window Only">Rear Window Only</option>
+              <option value="Single Cab">Single Cab</option>
+              <option value="Dual Cab">Dual Cab</option>
+              <option value="Seadn / Hatchback">Seadn / Hatchback</option>
+              <option value="SUV / Wagon / 4WD">SUV / Wagon / 4WD</option>
+              <option value="Truck ( 3 Windows )">Truck ( 3 Windows )</option>
+              <option value="ADD ONS: Windscreen Sunstrip">
+                ADD ONS: Windscreen Sunstrip
+              </option>
+              <option value="House / Commercial Windows">
+                House / Commercial Windows
+              </option>
+            </select>
+          </div>
+          <div class="modal-input-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Enter any additional details"
+            ></textarea>
+          </div>
+          <!-- Submitting.... -->
+          <div id="submit" style="color: rgb(255, 255, 255); display: none">
+            🔄 Submitting...
+          </div>
+          <!-- success message -->
+          <div id="success" style="color: rgb(5, 212, 5); display: none">
+            ✅ Sent Successful
+          </div>
+          <!-- error message -->
+          <div id="error-msg" style="color: red; display: none">
+            ❌ Something went wrong
+          </div>
+          <!-- Formsubmit tools -->
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_subject" value="New Booking" />
+          <input type="hidden" name="_captcha" value="false" />
+          <div class="modal-button-group">
+            <button type="submit" id="submit" class="modal-button">
+              Submit
+            </button>
+            <button type="reset" id="reset" class="modal-button">Reset</button>
+          </div>
+        </form>
+        <span class="closes" onclick="closeModal()">&times;</span>
+      </div>
     </div>
-    <footer>
-        <p>&copy; 2022 First in Tinting Vehicles</p>
+
+    <!-- Home Section Start-->
+    <section class="home">
+      <!-- Videos -->
+      <video class="video-slide active" src="/site/video/1.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="/site/video/2.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="/site/video/3.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="/site/video/4.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="/site/video/5.mp4" autoplay muted loop></video>
+      <div class="content active">
+        <h1>Car Tinting<br /><span>Cool</span></h1>
+        <p>
+          Elevate your car's style and comfort with our personalized tinting
+          options. Select from a range of tints and finishes to reflect your
+          individual taste while enjoying the practical advantages of heat
+          reduction and UV shielding.
+        </p>
+        <a href="#" class="bookNow">Book Now</a>
+      </div>
+      <div class="content">
+        <h1>Cool Shade.<br /><span>Chill</span></h1>
+        <p>
+          Elevate your ride with our ceramic tinting solutions. Ceramic tinting
+          protects your vehicle from the sun's harmful rays as well as makes
+          your car cooler and your upholstery looking fresh for years. Drive
+          with style, comfort, and confidence with our expert tinting services.
+        </p>
+        <a href="#" class="bookNow">Book Now</a>
+      </div>
+      <div class="content">
+        <h1>Cool Shield.<br /><span>Frost</span></h1>
+        <p>
+          Our best tinting services make driving safer and more enjoyable. The
+          advanced films reduce glare and enhance visibility and ensures that
+          every journey is as clear as it is comfortable.
+        </p>
+        <a href="#" class="bookNow">Book Now</a>
+      </div>
+      <div class="content">
+        <h1>Cool Cover.<br /><span>Ice</span></h1>
+        <p>
+          Our special window tint keeps your car private and shielded from the
+          sun's rays , while does not block the sunlight completely for a classy
+          touch. So you can enjoy all the benefits of sunlight without any
+          drawbacks.
+        </p>
+        <a href="#" class="bookNow">Book Now</a>
+      </div>
+      <div class="content">
+        <h1>Cool Coat.<br /><span>Freeze</span></h1>
+        <p>
+          Invest in our lasting quality and professional expertise with our car
+          tinting services. We use premium films and employ highly skilled
+          technicians to ensure a flawless installation and long-term
+          satisfaction. Choose our expert installation for a tint that looks
+          great and performs for years to come.
+        </p>
+        <a href="#" class="bookNow">Book Now</a>
+      </div>
+      <div class="media-icons">
+        <a
+          href="https://www.facebook.com/profile.php?id=61556859754832"
+          target="_blank"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/first_in_tinting?igsh=MWh5YzJkdGp0OHQ1cw=="
+          target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+      </div>
+      <div class="slider-navigation">
+        <div class="nav-btn active"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+      </div>
+      <!-- Book Now Button -->
+      <div class="stick" id="stick">
+        <a href="#" id="bookNow2">Book Now</a>
+      </div>
+    </section>
+    <!-- Home Section End-->
+
+    <!-- Services Section Start-->
+    <section class="service" id="service">
+      <div class="header-section">
+        <h2 class="title">Our <span>Services</span></h2>
+      </div>
+      <span class="highlight"
+        ><p>Discover our range of professional car tinting services.</p></span
+      >
+      <ul class="cards">
+        <li class="card">
+          <img
+            class="view-image"
+            loading="lazy"
+            src="img/services/tint.jpeg"
+            alt="img"
+          />
+          <h3>Window Tinting</h3>
+          <p>
+            Enhance your driving experience with our high-quality window tinting
+            services.
+          </p>
+        </li>
+        <li class="card">
+          <img
+            class="view-image"
+            loading="lazy"
+            src="img/services/ceramic.jpg"
+            alt="img"
+          />
+          <h3>Ceramic Coating</h3>
+          <p>
+            Protect your vehicle's paint and enhance its shine with our ceramic
+            coating services.
+          </p>
+        </li>
+        <li class="card">
+          <img
+            class="view-image"
+            loading="lazy"
+            src="img/services/paintprot.jpg"
+            alt="img"
+          />
+          <h3>Paint Protection Film</h3>
+          <p>
+            Keep your car looking new with our paint protection film
+            installation services.
+          </p>
+        </li>
+        <li class="card">
+          <img
+            class="view-image"
+            loading="lazy"
+            src="img/services/hhrestore.jpg"
+            alt="img"
+          />
+          <h3>Headlight Restoration</h3>
+          <p>
+            Improve visibility and aesthetics with our professional headlight
+            restoration services.
+          </p>
+        </li>
+        <li class="card">
+          <img
+            class="view-image"
+            loading="lazy"
+            src="img/services/cardetail.jpeg"
+            alt="img"
+          />
+          <h3>Car Detailing</h3>
+          <p>
+            Restore your car's shine and cleanliness with our comprehensive car
+            detailing services.
+          </p>
+        </li>
+        <li class="card">
+          <img
+            class="view-image"
+            loading="lazy"
+            src="img/services/tintremoval.jpg"
+            alt="img"
+          />
+          <h3>Tint Removal</h3>
+          <p>
+            Remove old or damaged window tinting with our safe and efficient
+            tint removal services.
+          </p>
+        </li>
+      </ul>
+      <a href="/site/html/services.html" class="btn">View More</a>
+    </section>
+    <!-- Services Section End-->
+
+    <!-- About Us SECTION  Start-->
+    <section class="about" id="about">
+      <div class="header-section">
+        <h2 class="title">About <span>Us</span></h2>
+      </div>
+      <div class="highlight">
+        <p>Discover our story in providing car tinting services.</p>
+      </div>
+      <div class="abouttext">
+        <div class="“row" company-info”>
+          <h3>Our Story</h3>
+          <p>
+            We are First In Vehicles, a family-owned and operated business that
+            has been providing professional car tinting services in Queensland
+            since 2005. With over <span>18 years of experience</span>, we bring
+            a wealth of knowledge and expertise to every vehicle we service. Our
+            passion for cars and dedication to quality workmanship drive us to
+            use only the best materials and equipment, ensuring that your car
+            windows are tinted to perfection.
+          </p>
+        </div>
+        <div class="“row" mission-vision”>
+          <h3>Our Mission</h3>
+          <p>
+            At First In Vehicles, our mission is to deliver car tinting services
+            that exceed your expectations. We aim to provide you with the best
+            value for your money, the highest level of customer service, and the
+            most convenient and hassle-free experience. We want you to enjoy the
+            benefits of car tinting, such as enhanced privacy, security,
+            comfort, and aesthetics.
+          </p>
+          <h3>Our Vision</h3>
+          <p>
+            Our vision is to become the leading car tinting service provider in
+            Queensland, known for our expertise, professionalism, and customer
+            satisfaction. We aspire to grow our business by building long-term
+            relationships with our clients and expanding our range of services.
+            We are committed to staying updated with the latest trends and
+            technologies in car tinting.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- About Us SECTION  End-->
+
+    <!-- Contact Section Start-->
+    <section class="contact" id="contact">
+      <div class="header-section">
+        <h2 class="title">Contact <span>Us</span></h2>
+      </div>
+      <div class="highlight">
+        <p>Reach out to us for any inquiries or feedback.</p>
+      </div>
+      <div class="row">
+        <div class="col information">
+          <div class="contact-details">
+            <p>
+              <i class="fas fa-map-marker-alt" style="color: red"></i> 124-126
+              Gladstone Rd, Allenstown, QLD 4700
+            </p>
+            <p>
+              <i class="fas fa-envelope" style="color: red"></i>
+              firstinvehicles@gmail.com
+            </p>
+            <p><i class="fas fa-phone" style="color: red"></i> 0488 900 468</p>
+            <p>
+              <i class="fa fa-cog" style="color: red"></i> Dealers License :
+              4645611
+            </p>
+            <p>
+              <i class="fas fa-address-card" style="color: red"></i> ABN : 49 381 242 966
+            </p>
+            <p>
+              <i class="fas fa-clock" style="color: red"></i> Monday - Friday:
+              8:30 AM - 5:00 PM
+            </p>
+            <p>
+              <i class="fas fa-clock" style="color: red"></i> Saturday: 8:30 AM
+              - 1:00 PM
+            </p>
+            <p>
+              <i class="fas fa-clock" style="color: red"></i> Sunday: Closed
+            </p>
+          </div>
+        </div>
+        <div class="col form">
+          <form class="contactsform" method="post" id="main_contact_form">
+            <input
+              type="name"
+              name="Name"
+              id="name"
+              placeholder="Name*"
+              required
+            />
+            <input
+              type="email"
+              name="Email"
+              id="email"
+              placeholder="Email*"
+              required
+            />
+            <input
+              type="tel"
+              name="Number"
+              id="number"
+              placeholder="Number*"
+              required
+            />
+            <textarea
+              id="subject"
+              name="Subject"
+              placeholder="Write something.."
+            ></textarea>
+            <!-- Submitting.... -->
+            <div id="submitting" style="color: rgb(0, 255, 255); display: none">
+              🔄 Submitting...
+            </div>
+            <!-- success message -->
+            <div
+              id="success-message"
+              style="color: rgb(5, 212, 5); display: none"
+            >
+              ✅ Sent Successful
+            </div>
+            <!-- error message -->
+            <div id="error-message" style="color: red; display: none">
+              ❌ Something went wrong
+            </div>
+            <!-- Formsubmit tools -->
+            <input type="hidden" name="_template" value="table" />
+            <input
+              type="hidden"
+              name="_subject"
+              value="Form Submitted From Home Page"
+            />
+            <input type="hidden" name="_captcha" value="false" />
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section End-->
+
+    <!-- The success popup box -->
+    <div class="popupps popup-success">
+      <div class="successpopup-content">
+        <a href="/index.html" class="successpopup-close">&times;</a>
+        <h1>Thanks for filling out the form!</h1>
+        <span class="popupps-timer"></span>
+      </div>
+    </div>
+
+    <!-- The error popup box -->
+    <div class="popupps popup-error">
+      <div class="errorpopup-content">
+        <a href="/index.html" class="errorpopup-close">&times;</a>
+        <h1 style="color: red">Something went wrong</h1>
+        <span class="popupps-timer"></span>
+      </div>
+    </div>
+
+    <!-- Map Area Start-->
+    <section class="map">
+      <div class="google-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3661.823794605707!2d150.5056047!3d-23.394590899999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6bc3ab4e21fd8f47%3A0xf88cc305c2e2387f!2sFirst%20in%20Vehicles!5e0!3m2!1sen!2snp!4v1709552887870!5m2!1sen!2snp"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+    <!-- Map Area End-->
+
+    <!-- FOOTER SECTION START-->
+    <footer id="footer">
+      <div class="content">
+        <div class="left box">
+          <div class="lower">
+            <div class="topic">Contact us</div>
+            <p>
+              <i class="fa fa-map-marker-alt"></i>
+              124-126 Gladstone Rd, Allenstown, QLD 4700
+            </p>
+            <p><i class="fa fa-phone"></i>+61 488 900 468</p>
+            <p>
+              <i class="fa fa-envelope"></i>
+              firstinvehicles@gmail.com
+            </p>
+            <p><i class="fa fa-cog"></i> Dealers License : 4645611</p>
+            <p><i class="fas fa-address-card"></i> ABN : 49 381 242 966</p>
+          </div>
+        </div>
+        <div class="middle box">
+          <div class="topic">Trading Hours</div>
+          <p><i class="far fa-clock"></i> Mon - Fri, 8:30 AM - 05:00 PM</p>
+          <p><i class="far fa-clock"></i> Saturday, 8:30 AM - 01:00 PM</p>
+          <p><i class="far fa-clock"></i> Sunday, Closed</p>
+        </div>
+        <div class="right box">
+          <div class="topic">Connect With Us</div>
+          <ul class="social">
+            <li>
+              <a
+                href="https://www.facebook.com/profile.php?id=61556859754832"
+                target="_blank"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/first_in_tinting?igsh=MWh5YzJkdGp0OHQ1cw=="
+                target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="bottom">
+        <p>
+          Copyright © 2024 <a href="#">firstinvehicles</a> All rights reserved
+        </p>
+      </div>
     </footer>
-    <script src="assets/js/script.js"></script>
-</body>
+    <!-- FOOTER SECTION END-->
+
+    <script>
+      // Form Submit ========================================
+      //use ajax to submit form to https://formsubmit.co/1b224686853bcc5a46e1616e3cbc7abf
+      document.addEventListener("DOMContentLoaded", function () {
+        $(".contactsform").submit(function (e) {
+          e.preventDefault();
+          var form = $(this);
+          var formdata = form.serialize();
+          $("#success-message").css("display", "none");
+          $("#error-message").css("display", "none");
+          $("#submitting").css("display", "block");
+          $.ajax({
+            type: "POST",
+            url: "https://formsubmit.co/1b224686853bcc5a46e1616e3cbc7abf",
+            data: formdata,
+            success: function () {
+              $("#submitting").css("display", "none");
+              $("#success-message").css("display", "block");
+              // show the success popup box
+              var popup = document.querySelector(".popup-success");
+              popup.style.display = "block";
+              // start the countdown timer with 5 seconds
+              countdown(5);
+              form.trigger("reset");
+            },
+            error: function () {
+              $("#error-message").css("display", "block");
+              // show the error popup box
+              var popup = document.querySelector(".popup-error");
+              popup.style.display = "block";
+              // start the countdown timer with 5 seconds
+              countdown(5);
+              form.trigger("reset");
+            },
+          });
+        });
+
+        // create a function that will close the popup box
+        function closeformPopup() {
+          var popup = document.querySelector(".popupps");
+          popup.style.display = "none";
+          // Refresh the page
+          window.location.reload();
+        }
+
+        // create a function that will update the popup-timer element and close the popup box
+        function countdown(seconds) {
+          var timer = document.querySelector(".popupps-timer");
+          timer.textContent =
+            "You'll be redirected to home page in " + seconds + "...";
+          var interval = setInterval(function () {
+            seconds--;
+            timer.textContent =
+              "You'll be redirected to home page in " + seconds + "...";
+            if (seconds == 0) {
+              clearInterval(interval);
+              closeformPopup();
+              window.location.href = "index.html";
+              closeformPopup();
+            }
+          }, 1000);
+        }
+      });
+    </script>
+
+    <script type="text/javascript" src="/site/js/script.js"></script>
+  </body>
 </html>
